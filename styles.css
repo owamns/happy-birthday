@@ -1,0 +1,43 @@
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkle 1s infinite ease-in-out;
+}
+
+.shooting-star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 15px rgb(255, 255, 255);
+}
+
+@keyframes moveStar {
+    0% {
+        transform: translate(0, 0) scale(0.2);
+        opacity: 1;
+        box-shadow: 0 0 10px 10px 5px rgb(255, 255, 255);
+    }
+    100% {
+        transform: translate(100vw, 100vh) scale(2);
+        opacity: -1;
+        box-shadow: -20px -20px 80px 20px rgb(255, 230, 0);
+    }
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+

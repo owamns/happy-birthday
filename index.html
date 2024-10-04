@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Diapositivas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="config.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="miMusica" src="mhbd.mp3" preload="auto" style="display:none;"></audio>
+    <div class="inicio sky">
+        <div class="shooting-star"></div>
+        <button id="mostrarCarrusel">
+            <img src="icon.png" style="width: 50px;" alt="">
+            <p style="margin: 0;">Presiona aqui</p>
+        </button>
+    </div>
+    <div class="carrusel" style="display: none;">
+        <div class="diapositivas" style="text-align: center;">
+            <div class="diapositiva slide">
+                <img src="rosa.png" alt="" width="80rem">
+                <p>Esto es para ti :3 <br> =>>></p>
+            </div>
+            <div class="diapositiva slide ">
+                <img src="torta-de-cumpleanos.png" alt="" width="80rem">
+                <h1 style="font-size: 2rem;">Hoy es un día especial 🌟 <br>
+                porque es tu día <br> ¡Feliz cumpleaños! Diana 🎉</h1>
+                <p>=>>></p>
+                <p>¡desliza y lee hasta el final!</p>
+            </div>
+            <div class="diapositiva slide">
+                <div class="texto-animado" id="textoAnimado"></div>
+            </div>
+        </div>
+        <div class="indicadores">
+            <span class="indicador" data-index="0"></span>
+            <span class="indicador" data-index="1"></span>
+            <span class="indicador" data-index="2"></span>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

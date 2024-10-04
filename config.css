@@ -1,0 +1,85 @@
+* {
+    font-family: "Afacad Flux", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+}
+
+#mostrarCarrusel {
+    border-radius: 40px;
+}
+
+.inicio {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.carrusel {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.diapositivas {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.diapositiva {
+    min-width: 100%;
+    height: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+.indicadores {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicador {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.indicador.active {
+    opacity: 1;
+}
+
+.slide {
+    background-color: rgba(240, 248, 255, 0);
+    backdrop-filter: blur(5px);
+    display: flex; 
+    flex-direction: column;
+}
+
+.texto-animado {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
